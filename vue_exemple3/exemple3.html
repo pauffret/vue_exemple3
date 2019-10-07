@@ -188,9 +188,7 @@
                 var total = 0;
 
                 this.services.forEach(function(s){
-                    if (s.count){
-                        total+= s.price;
-                    }
+                        total+= s.price * s.count;
                 });
 
                 return total;
